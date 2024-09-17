@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2d86c9825.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ------------------------------main container strat------------------------------------ -->
+    <div class="container">
+        <div class="musicplayer">
+            <!-- -----------------------------nav strat------------------------------------------ -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            
+<!-- ------------------------------------nav end------------------------------------------------- -->
+ <!-- ------------------------img + audio controls strat------------------------------------------ -->
+            <img src="/asset/singer image.jpeg" class="singer-img">
+            <h1>samjhawan</h1>
+            <p>ATIF ASLAM</p>
+
+            <audio controls id="song">
+                <source
+                    src="/asset/[Slowed Reverb] Samjhawan - Arjit Singh - Vhan Muzic _ Lofi Mix _ Music Lovers _ Text Audio _viral(MP3_160K).mp3">
+
+            </audio>
+            <!-- ---------------------img+ audio controls end-------------------------------------- -->
+            <input type="range" value="0" id="progress">
+
+<!-- ----------------------------------another child container strat-------------------------------------- -->
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+<!-- -------------------------------- child container end-------------------------------------------------- -->
+        </div>
+
+    </div>
+    <!-- -------------------------------------main container end---------------------------- -->
+<script src="/script.js"></script>
+</body>
+
+</html>
