@@ -1,4 +1,4 @@
-let progress = document.getElementById("profress");
+let progress = document.getElementById("progress");
 let song = document.getElementById("song");
 let ctrlIcon = document.getElementById("ctrlIcon");
 
@@ -16,7 +16,7 @@ ctrlIcon.classList.remove("fa-pause");
 ctrlIcon.classList.add("fa-play");
 }
 else{
-    song.pause();
+    song.play();
     ctrlIcon.classList.add("fa-pause");
     ctrlIcon.classList.remove("fa-play");
 }
